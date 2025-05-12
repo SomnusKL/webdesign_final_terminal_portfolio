@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyi Li – Terminal Portfolio</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+    <!-- background -->
+
+    <!-- terminal area -->
+    <div class="crt-wrapper crt-scanlines">
+        <main id="terminal" class="crt-flicker">
+            <header>
+                <h1 class="command-highlight">KEYI / SOMNUS LI</h1>
+            </header>
+
+            <!-- output -->
+            <section class="output" id="output">
+                <p>Welcome to Keyi Li's terminal portfolio.</p>
+                <p>Type <span class="command-highlight">start</span> to see available commands.</p>
+            </section>
+
+            <!-- input -->
+            <section class="input-line">
+                <span class="prompt">&gt;</span>
+                <input type="text" id="commandInput" autocomplete="off" autofocus />
+            </section>
+
+            <footer></footer>
+        </main>
+    </div>
+
+    <!-- command templates -->
+    <section id="template-container" style="display: none;">
+        <div id="start-template" class="command-result indented">
+            <p><span class="command-keyword">aboutme</span></p>
+            <p>- some basic info about KEYI</p>
+            <p><span class="command-keyword">draw</span></p>
+            <p>- KEYI's artworks</p>
+            <p><span class="command-keyword">game</span></p>
+            <p>- Games KEYI has worked on</p>
+            <p><span class="command-keyword">website</span></p>
+            <p>- KEYI's GUI Portfolio</p>
+            <p><span class="command-keyword">clear</span></p>
+            <p>- Clear all and reload Page</p>
+        </div>
+
+        <div id="aboutme-template" class="command-result indented">
+            <p><span class="command-keyword">aboutme</span></p>
+            <p>- Hi, I'm <span class="command-highlight">KEYI LI</span>. I do art, game design, and other stuff.</p>
+        </div>
+
+        <div id="skills-template" class="command-result indented">
+            <p><span class="command-keyword">skills</span></p>
+            <p>- HTML / CSS / JS / Unity / Figma / Adobe Suite</p>
+        </div>
+
+        <div id="website-template" class="command-result indented">
+            <p>Visit my GUI portfolio: <a href="https://keyili.art/" target="_blank">https://keyili.art/</a></p>
+        </div>
+
+        <div id="draw-template" class="command-result indented">
+            <p><span class="command-keyword">draw</span></p>
+            <p>- opening drawing portfolio...</p>
+        </div>
+    
+        <div id="game-template" class="command-result indented">
+            <p><span class="command-keyword">game</span></p>
+            <p>- opening game design portfolio...</p>
+          </div>
+          
+          
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

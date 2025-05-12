@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawings – Keyi Li</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+    <div class="crt-wrapper crt-scanlines">
+        <main id="terminal" class="crt-flicker">
+            <header>
+                <h1 class="command-highlight">YES, I CAN DRAW</h1>
+            </header>
+
+            <section class="output" id="output">
+                <p>But not for art, just for fun.</p>
+                <p>Type <span class="command-keyword">fanarts</span>, <span class="command-keyword">gamearts</span>, or<span class="command-keyword"> randomstuff</span> to see artworks.</p>
+                <p>Type <span class="command-keyword">back</span> to return to homepage.</p>
+                <p>Type <span class="command-keyword">clear</span> to reload.</p>
+                <p>Type <span class="command-keyword">seegame</span> to visit game design portfolio.</p>
+
+            </section>
+
+            <section class="input-line">
+                <span class="prompt">&gt;</span>
+                <input type="text" id="commandInput" autocomplete="off" autofocus />
+            </section>
+        </main>
+    </div>
+
+    <!-- hidden templates for each command -->
+    <section id="template-container" style="display: none;">
+        <div id="fanarts-template" class="command-result indented">
+            <p><span class="command-keyword">fanarts</span></p>
+            <p>- fan arts I draw for IPs and topics of interest.</p>
+            <div class="image-grid">
+                <img src="./images/draw/fanart1.jpg" srcset="./images/draw/fanart1@2x.jpg 2x" alt="Fanart 1" />
+                <img src="./images/draw/fanart2.jpg" srcset="./images/draw/fanart2@2x.jpg 2x" alt="Fanart 2" />
+                <img src="./images/draw/fanart3.jpg" srcset="./images/draw/fanart3@2x.jpg 2x" alt="Fanart 3" />
+                <img src="./images/draw/fanart4.jpg" srcset="./images/draw/fanart4@2x.jpg 2x" alt="Fanart 4" />
+                <img src="./images/draw/fanart5.jpg" srcset="./images/draw/fanart5@2x.jpg 2x" alt="Fanart 5" />
+
+            </div>
+        </div>
+
+        <div id="gamearts-template" class="command-result indented">
+            <p><span class="command-keyword">gamearts</span></p>
+            <p>- making games requires a lot of art assets, here’s what I’ve made</p>
+            <div class="image-grid">
+                <img src="./images/draw/gameart1.jpg" srcset="./images/draw/gameart1@2x.jpg 2x" alt="Gameart 1"/>
+                <img src="./images/draw/gameart2.jpg" srcset="./images/draw/gameart2@2x.jpg 2x"alt="Gameart 2"/>
+            </div>
+        </div>
+
+        <div id="randomstuff-template" class="command-result indented">
+            <p><span class="command-keyword">randomstuff</span></p>
+            <p>- Things that cannot be categorized</p>
+            <div class="image-grid">
+                <img src="./images/randomstuff1.gif" alt="Random Stuff 1 GIF" width="300" height="auto"/>
+                <img src="./images/randomstuff2.png" srcset="./images/randomstuff2@2x.png 2x" alt="Random Stuff 2" width="300" height="auto"/>
+                <img src="./images/randomstuff3.png" srcset="./images/randomstuff3@2x.png 2x" alt="Random Stuff 2" width="300" height="auto"/>
+
+            </div>
+        </div>
+
+        <div id="back-template" class="command-result indented">
+            <p><span class="command-keyword">back</span></p>
+            <p>- returning to homepage...</p>
+        </div>
+
+        <div id="game-template" class="command-result indented">
+            <p><span class="command-keyword">game</span></p>
+            <p>- opening game design portfolio...</p>
+          </div>
+          
+    </section>
+
+    <script src="js/draw.js"></script>
+</body>
+
+</html>

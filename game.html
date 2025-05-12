@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games – Keyi Li</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+  <div class="crt-wrapper crt-scanlines">
+    <main id="terminal" class="crt-flicker">
+      <header>
+        <h1 class="command-highlight">I ALSO MAKE GAMES</h1>
+      </header>
+
+      <section class="output" id="output">
+        <p>Mostly as artist, but also do some design.</p>
+        <p>Type <span class="command-keyword">thought_sim</span>, <span class="command-keyword">song_of_maka</span>, or <span class="command-keyword">simple_lines</span> to watch gameplay.</p>
+        <p>Type <span class="command-keyword">back</span> to return to homepage.</p>
+        <p>Type <span class="command-keyword">seeart</span> to visit art portfolio.</p>
+
+      </section>
+
+      <section class="input-line">
+        <span class="prompt">&gt;</span>
+        <input type="text" id="commandInput" autocomplete="off" autofocus />
+      </section>
+    </main>
+  </div>
+
+  <!-- command templates -->
+  <section id="template-container" style="display: none;">
+    <div id="thought_sim-template" class="command-result indented">
+      <p><span class="command-keyword">thought_sim</span></p>
+      <p>- Engage in a quirky, voice-acted exploration of philosophical dilemmas, where humor meets profound thought.</p>
+      <video controls width="100%">
+        <source src="./media/thought_sim.mp4" type="video/mp4">
+      </video>
+      <p><a href="https://store.steampowered.com/app/2696320/_/" target="_blank">Visit Steam Page</a></p>
+    </div>
+
+    <div id="song_of_maka-template" class="command-result indented">
+      <p><span class="command-keyword">song_of_maka</span></p>
+      <p>- Traverse through the kingdom of birds, use melody and your wing to explore the unknown wonders.</p>
+      <video controls width="100%">
+        <source src="./media/song_of_maka.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p><a href="https://store.steampowered.com/app/3490760/_/" target="_blank">Visit Steam Page</a></p>
+    </div>
+
+    <div id="simple_lines-template" class="command-result indented">
+      <p><span class="command-keyword">simple_lines</span></p>
+      <p>- Mini games with simple line and color</p>
+      <video controls width="100%">
+        <source src="./media/simple_lines.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div id="back-template" class="command-result indented">
+      <p><span class="command-keyword">back</span></p>
+      <p>- returning to homepage...</p>
+    </div>
+
+
+    <div id="draw-template" class="command-result indented">
+        <p><span class="command-keyword">draw</span></p>
+        <p>- opening drawing portfolio...</p>
+    </div>
+
+  </section>
+
+  <script src="js/game.js"></script>
+</body>
+
+</html>
