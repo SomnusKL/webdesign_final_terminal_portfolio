@@ -1,8 +1,6 @@
-// ====== 1. GLOBAL VARIABLES ======
 const websiteURL = "https://keyili.art/";
 let input, output;
 
-// ====== 2. OUTPUT HELPERS ======
 function echoCommand(cmd) {
     const line = document.createElement("div");
     line.textContent = `> ${cmd}`;
@@ -24,7 +22,7 @@ function scrollToBottom() {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 }
 
-// ====== 3. COMMAND PROCESSING ======
+//COMMAND PROCESSING
 function processCommand(rawCmd) {
     const cmd = rawCmd.trim().toLowerCase();
     echoCommand(rawCmd);
@@ -67,7 +65,6 @@ function processCommand(rawCmd) {
     }
 }
 
-// ====== 4. INIT ======
 document.addEventListener("DOMContentLoaded", () => {
     input = document.getElementById("commandInput");
     output = document.getElementById("output");
