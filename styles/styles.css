@@ -95,7 +95,7 @@ input[type="text"] {
 }
 
 .command-result p {
-    line-height: 0.6;
+    line-height: 0.8;
 }
 
 /*LINKS*/
@@ -270,6 +270,10 @@ a:visited {
     .command-result {
         margin-top: 16px;
       }
+
+      .command-result p {
+    line-height: 1.3; 
+  }
 
       .crt-wrapper {
         border: 2px solid #1c3d1c;
